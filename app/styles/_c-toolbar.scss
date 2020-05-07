@@ -1,0 +1,17 @@
+/* ==========================================================================
+  c-toolbar (simple variant)
+   ========================================================================== */
+
+.c-toolbar {
+  display: flex;
+  align-items: center;
+}
+
+.c-toolbar__title {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.c-toolbar__spacer {
+  flex: 1 1 auto;
+}

@@ -1,0 +1,53 @@
+/* ==========================================================================
+  c-button
+   ========================================================================== */
+
+.c-button {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  border: none;
+  appearance: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: .8rem 1.2rem;
+}
+
+.c-button--icon {
+  padding: .8rem;
+}
+
+.c-button--icon img {
+  display: block;
+}
+
+.c-button svg {
+  position: relative;
+  top: 0.3rem;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.c-button svg path {
+  fill: currentColor;
+}
+
+.c-button--primary {
+  background: #0E5EB8;
+  color: #FFF;
+}
+
+.c-button--secondary {
+  border: .1rem solid #545961; /* gray 700 */
+  color: #545961; /* gray 700 */;
+  background: none;
+}
+
+.c-button--tertiary {
+  border: .1rem solid transparent;
+  color: #0E5EB8; /* blue 700 */;
+  background: none;
+}
+
+.c-button--tertiary:hover {
+  border:  .1rem solid #545961; /* gray 700 */
+}

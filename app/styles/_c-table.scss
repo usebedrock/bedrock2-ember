@@ -1,0 +1,39 @@
+/* ==========================================================================
+  c-table
+   ========================================================================== */
+
+.c-table {
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.c-table td,
+.c-table th {
+  vertical-align: middle;
+  padding: 0.6rem;
+  border-bottom: .1rem solid #E6E8EB; /* gray-200 */
+}
+
+.c-table th {
+  border-bottom-width: .2rem; 
+  text-align: left;
+  font-weight: 500;
+}
+
+.c-table tr:nth-child(odd) td {
+  background: #F4F5F6; /* gray 100 */
+}
+
+.c-table tr:last-child td {
+  border-bottom-width: 0
+}
+
+.c-table__header--actions, 
+.c-table__cell--actions {
+  width: 3rem;
+}
+
+.c-table__cell--actions > button {
+  float: right;
+}

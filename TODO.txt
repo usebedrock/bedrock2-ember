@@ -1,0 +1,6 @@
+Framework level
+
+* Figure out SPA on CircleCI/AWS
+* Automate the page tree
+* Automate the component tree
+* Fix the code syntax highlighting

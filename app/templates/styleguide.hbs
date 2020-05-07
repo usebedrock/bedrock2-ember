@@ -1,0 +1,52 @@
+<div class="br-styleguide-columns">
+  <div class="br-styleguide-columns__column">
+    <div class="u-m-2">
+      <nav>
+        <h4>Basics</h4>
+        <ul class="c-bordered-list">
+          <li>
+            <LinkTo @route="styleguide.colors">Colors</LinkTo>
+          </li>
+          <li>
+            <LinkTo @route="styleguide.icons">Icons</LinkTo>
+          </li>
+          <li>
+            <LinkTo @route="styleguide.typography">Typography</LinkTo>
+          </li>
+        </ul>
+
+        <h4>Components</h4>
+        <ul class="c-bordered-list">
+          <li>
+            <LinkTo @route="styleguide.avatar">Avatar</LinkTo>
+          </li>
+          <li>
+            <LinkTo @route="styleguide.badge">Badge</LinkTo>
+          </li>
+          <li>
+            <LinkTo @route="styleguide.button">Button</LinkTo>
+          </li>
+          <li>
+            <LinkTo @route="styleguide.panel">Panel</LinkTo>
+          </li>
+          <li>
+            <LinkTo @route="styleguide.toolbar">Toolbar</LinkTo>
+          </li>
+          <li>
+            <LinkTo @route="styleguide.navbar">Navbar</LinkTo>
+          </li>
+          <li>
+            <LinkTo @route="styleguide.modal">Modal</LinkTo>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="br-styleguide-columns__column">
+    <div class="u-m-2">
+      <div class="c-content">
+          {{outlet}}
+      </div>
+    </div>
+  </div>
+</div>

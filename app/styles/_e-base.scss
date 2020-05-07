@@ -1,0 +1,74 @@
+/* ==========================================================================
+  e-base
+   ========================================================================== */
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+
+  color: #2A2D31; /* gray 800 */
+  line-height: 1.5;
+
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+}
+
+a {
+  color: #0E5EB8; /* blue 700 */
+}
+
+h1, h2, h3, h4 {
+  color: #212326;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+strong {
+  font-weight: 500;
+}
+
+hr {
+  border: none;
+  margin: 2.4rem 0;
+  border-bottom: .1rem solid #E6E8EB; /* gray-200 */
+}
+
+/* Code
+   ========================================================================== */
+
+code, pre {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 1.3rem;
+}
+
+code {
+  padding: 0.3rem;
+  border-radius: 0.1rem;
+  color: #CE2F55;
+  background: #FFF;
+}
+
+pre {
+  text-align: left;
+  white-space: pre-wrap;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
+  background: #EEE;
+  padding: 1.2rem;
+}
+
+pre > code {
+  background: none;
+}

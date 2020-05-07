@@ -1,0 +1,17 @@
+
+/* ==========================================================================
+  c-input
+   ========================================================================== */
+
+.c-input {
+  border: 0.1rem solid #CCD1D9; /* gray-300 */
+  padding: .6rem;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+}
+
+.c-input:focus {
+  outline: 0;
+  border-color: #0E5EB8;
+}

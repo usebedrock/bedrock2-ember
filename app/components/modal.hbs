@@ -1,0 +1,45 @@
+<div class="c-modal-backdrop">&nbsp;</div>
+
+<div class="c-modal c-modal--large">
+
+  <div class="c-modal__push">&nbsp;</div>
+
+  <div class="c-modal__header c-modal__header--bordered">
+    <div class="c-toolbar-complex">
+      <div class="c-toolbar-complex__left">
+        <div class="c-toolbar-complex__item">
+          <h2 class="c-toolbar-complex__title">Modal title</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="c-modal__content">
+    <div class="u-m-2">
+      {{yield}}
+    </div>
+  </div>
+
+ <div class="c-modal__footer c-modal__footer--bordered">
+
+    <div class="c-toolbar-complex">
+
+      <div class="c-toolbar-complex__left">
+        <div class="c-toolbar-complex__item">
+          <LinkTo @route="app.dashboard" class="c-button c-button--secondary">Cancel</LinkTo>
+        </div>
+      </div>
+
+      <div class="c-toolbar-complex__right">
+        <div class="c-toolbar-complex__item">
+          <LinkTo @route="app.dashboard" class="c-button c-button--primary" @icon="add">Save</LinkTo>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="c-modal__push">&nbsp;</div>
+
+</div>

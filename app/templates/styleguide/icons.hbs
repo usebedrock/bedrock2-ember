@@ -1,0 +1,11 @@
+{{outlet}}
+
+<h1 class="c-h3">Icons</h1>
+
+<ul class="br-styleguide-icon-list">
+  {{#each model as |icon|}}
+    <li>
+        <Icon @name="{{icon}}" /> {{icon}}
+    </li>
+  {{/each}}
+</ul>

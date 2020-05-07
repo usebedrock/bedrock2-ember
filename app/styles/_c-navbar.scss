@@ -1,0 +1,14 @@
+/* ==========================================================================
+  c-navbar
+   ========================================================================== */
+
+.c-navbar {
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  border-bottom: .1rem solid #CCD1D9; /* gray-300 */
+}
+
+.c-navbar > .c-toolbar {
+  flex: 1 0 auto;
+}

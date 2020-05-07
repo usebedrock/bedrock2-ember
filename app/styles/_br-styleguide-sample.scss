@@ -1,0 +1,23 @@
+/* ==========================================================================
+  br-styleguide-sample
+   ========================================================================== */
+
+.br-styleguide-sample {
+  border: .1rem solid #E6E8EB; /* gray-200 */
+  padding: 2.4rem;
+  margin: 0 0 2.4rem;
+  position: relative;
+}
+
+/* ==========================================================================
+  Changes to components in styleguide context
+  ========================================================================== */
+
+.br-styleguide-sample {
+  .c-modal-backdrop {
+    position: absolute;
+  }
+  .c-modal {
+    position: relative;
+  }
+}

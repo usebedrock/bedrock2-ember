@@ -1,0 +1,48 @@
+/* ==========================================================================
+  c-toolbar-complex (complex variant)
+   ========================================================================== */
+
+.c-toolbar-complex__title {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.c-toolbar-complex {
+  min-height: 5rem;
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.c-toolbar-complex__left,
+.c-toolbar-complex__right {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.c-toolbar-complex__left {
+  justify-content: flex-start;
+}
+
+.c-toolbar-complex__left .c-toolbar-complex__item {
+  margin-right: 2.4rem;
+}
+
+.c-toolbar-complex__left .c-toolbar-complex__item:only-child {
+  margin: 0;
+}
+
+.c-toolbar-complex__right {
+  justify-content: flex-end;
+}
+
+.c-toolbar-complex__right .c-toolbar-complex__item {
+  margin-left: 2.4rem;
+}
+
+.c-toolbar-complex__right .c-toolbar-complex__item:only-child {
+  margin: 0;
+}

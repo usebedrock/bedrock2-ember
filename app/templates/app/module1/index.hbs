@@ -1,0 +1,44 @@
+<MainNav />
+
+<div class="c-navbar">
+  <div class="c-toolbar">
+    <h2 class="c-toolbar__title u-mx-2">List page title</h2>
+    <div class="c-toolbar__spacer"></div>
+    <LinkTo class="c-button c-button--primary u-mx" @route="app.module1.add">
+      <Icon @name="add" />
+      Add item
+    </LinkTo>
+  </div>
+</div>
+
+<div class="u-m-2">
+  <table class="c-table c-table--bordered">
+    <thead>
+      <tr>
+        <th>Data header</th>
+        <th>Data header</th>
+        <th>Data header</th>
+        <th>Data header</th>
+        <th>Data header</th>
+        <th class="c-table__header c-table__header--actions"></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each @model as |row|}}
+      <tr>
+        <td>Data punt</td>
+        <td>Data punt</td>
+        <td>Data punt</td>
+        <td>Data punt</td>
+        <td>Data punt</td>
+        <td class="c-table__cell c-table__cell--actions">
+          <a class="c-button c-button--icon c-button--tertiary" href="/app/module1/detail">
+            <span class="u-sr-only">Naar detail</span>
+            <img src="/icons/chevron-right.svg">
+          </a>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,31 @@
+/* ==========================================================================
+  Component: bordered list
+  ========================================================================== */
+
+.c-bordered-list {
+  margin: 0 0 1.6rem;
+}
+
+.c-bordered-list ul {
+  margin: 0 0 0 1.6rem;
+}
+
+.c-bordered-list li {
+  border-bottom: 0.1rem solid #E6E8EB; /* gray-200 */
+}
+
+.c-bordered-list li:last-child {
+  border: none;
+}
+
+
+.c-bordered-list a {
+  display: block;
+  padding: 0.6rem;
+  color: #2A2D31; /* gray 800 */
+  text-decoration: none;
+}
+
+.c-bordered-list a.active {
+  background: #F4F5F6; /* gray 100 */
+}

@@ -1,0 +1,25 @@
+
+/* ==========================================================================
+  Utilities: generic (no category)
+  ========================================================================== */
+
+.u-maximize-width {
+  width: 100% !important;
+}
+
+.u-maximize-height {
+  height: 100% !important;
+}
+
+.u-sr-only {
+  position: absolute !important;
+  left: -10000px !important;
+  top: auto !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+}
+
+.u-overflow-hidden {
+  overflow: hidden !important;
+}
