@@ -1,7 +1,17 @@
-# bedrock2-ember-demo
+# Bedrock 2 - Ember
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This repo implements [Bedrock 2](https://gist.github.com/Wolfr/38a6495eba18a2327d0d012dcc9a974b).
+
+- [x] Page tree hide/show
+- [ ] Automated page tree
+- [x] Style guide
+- [x] Multiple SCSS files
+- [ ] Page states
+- [x] Color listing
+- [x] Typography listing
+- [x] Icon listing
+- [x] Component code
+- [ ] Code syntax highlighting
 
 ## Prerequisites
 
@@ -10,7 +20,6 @@ You will need the following things properly installed on your computer.
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with npm)
 * [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
 
 ## Installation
 
