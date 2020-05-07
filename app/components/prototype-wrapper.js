@@ -8,12 +8,42 @@ export default class styleguideComponent extends Component {
   @service router;
 
   get routeTree() {
-    // Need to filter these for loading and error states
-    var data = this.router._router._routerMicrolib.recognizer.names;
-    // Stuck here...
-    //var filtered = data.filter(name => name.includes('error'))
+
+    var routes = Object.keys(this.router._router._routerMicrolib.recognizer.names);
+    console.log(routes);
+    // Filter out the ones containing the words warning and error
+    var filteredRoutes = routes.filter(function(el) {
+      return !el.includes("loading")
+        && !el.includes("error")
+        && !el.includes("styleguide")
+        && !el.includes("debug")
+        && !el.includes("application")
+    });
     
-    return Object.keys(data);
+    // Some filters to replace 
+    function slashify(title) {
+      title = title.replace(/\./g, "/");
+      return title;
+    }
+  
+    function prettyTitle(title) {
+      title = title.replace(/\./g, " ");
+      title = title.replace(/\-/g, " ");
+      title = title.charAt(0).toUpperCase() + title.slice(1);
+      
+      return title;
+    }
+  
+    // Object creator
+    function finalizedRoutes(title) {
+      return {
+        url: slashify(title),
+        name: prettyTitle(title)
+      }
+    }
+
+    filteredRoutes = filteredRoutes.map(finalizedRoutes);
+    return filteredRoutes;
   }
   
   @action
@@ -21,3 +51,4 @@ export default class styleguideComponent extends Component {
     this.visibility = !this.visibility
   }
 }
+

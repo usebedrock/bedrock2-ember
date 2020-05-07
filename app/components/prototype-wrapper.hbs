@@ -8,44 +8,19 @@
     <div class="u-m-2">
       <div class="c-content">
 
-        {{#each routeTree as |route|}}
-          {{!-- How to filter this data? We need to remove the loading and error states --}}
-          {{!-- {{route}} --}}
-        {{/each}}
-
         <p><button class="c-button c-button--secondary" {{on 'click' this.toggleVisibility}}>Close page tree</button></p>
 
         <h4 class="c-h6">Page index</h4>
         {{!-- <p>Press Ctrl+M to show the page index.</p> --}}
         <p>View the <LinkTo @route="styleguide">style guide</LinkTo>.</p>
       </div>
-      <ul>
-        <li>
-          <h4>Authentication</h4>
-          <ul class="c-bordered-list">
-            <li>
-              <LinkTo @route="sign-in">Sign in</LinkTo>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h4>App</h4>
-          <ul class="c-bordered-list">
-            <li>
-              <LinkTo @route="app.dashboard">Dashboard</LinkTo>
-            </li>
-            <li>
-              <LinkTo @route="app.module1">Module 1</LinkTo>
-              <ul>
-                <li>
-                  <LinkTo @route="app.module1.detail">Detail</LinkTo>
-                  <LinkTo @route="app.module1.add">Add</LinkTo>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
+
+      <ul class="c-bordered-list">
+        {{#each routeTree as |route|}}
+          <li><a href="/{{route.url}}">{{route.name}}</a></li>
+        {{/each}}
       </ul>
+
     </div>
   </div>
   {{/if}}

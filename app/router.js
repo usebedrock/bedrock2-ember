@@ -14,6 +14,7 @@ Router.map(function() {
     this.route('module1', function() {
       this.route('add');
       this.route('detail');
+      this.route('index');
     });
   });
 
@@ -32,4 +33,9 @@ Router.map(function() {
   });
 
   this.route('debug');
+
+  this.route('module2', function() {
+    this.route('add');
+    this.route('detail');
+  });
 });
